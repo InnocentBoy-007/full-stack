@@ -10,7 +10,7 @@ export default function useFetchUsers() {
       setUsers(response.data.users);
       console.log(response.data.users);
     } catch (error) {
-      console.log("Bad request: ", error);
+      console.log("Bad request from frontend: ", error);
     }
   };
   return { users, fetchUsers };
